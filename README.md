@@ -2,6 +2,10 @@
 
 This project utilizes CSS and HTML to create a text portrait effect. The text content is transformed into a portrait image by setting the background to a portrait image and adjusting various CSS properties.
 
+## The result
+
+![me-output.jpg](output-text-portrait.jpg)
+
 ## Code Explanation
 
 The ```body``` selector sets the background color to black and hides overflowing content. It also specifies the font family as "Poppins".
