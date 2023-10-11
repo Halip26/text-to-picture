@@ -24,7 +24,19 @@ body {
   word-spacing: -5px;
 }
 
-@media only screen and (max-width: 414px), (max-width: 614px) {
+@media only screen and (max-width: 390px) {
+  #text {
+    padding-left: 0px;
+    padding-right: 0px;
+    letter-spacing: -1px;
+    word-spacing: -7px;
+    font-size: 6px;
+    line-height: 5px;
+    background-size: 68vh;
+  }
+}
+
+@media only screen and (max-width: 614px) {
   #text {
     padding-left: 0px;
     padding-right: 0px;
