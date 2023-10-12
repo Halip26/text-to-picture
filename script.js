@@ -16,7 +16,7 @@ const texts = [
 
 // Fungsi untuk mengubah teks secara acak
 function changeTextRandomly() {
-  // Menghasilkan indeks acak berdasarkan panjang larik teks
+  // Membuat indeks acak berdasarkan panjang larik teks
   const randomIndex = Math.floor(Math.random() * texts.length);
 
   // Mendapatkan teks pada indeks acak
@@ -26,7 +26,7 @@ function changeTextRandomly() {
   textElement.textContent = randomText;
 }
 
-// Panggil fungsi pada awalnya untuk mengatur teks awal
+// Panggil fungsinya untuk mengatur teks secara random
 changeTextRandomly();
 
 // Atur interval untuk mengubah teks setiap 0,5 detik (500 milliseconds)
