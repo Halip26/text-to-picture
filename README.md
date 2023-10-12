@@ -4,7 +4,7 @@ This project utilizes CSS and HTML to create a text portrait effect. The text co
 
 ## The result
 
-![me-output.jpg](output-text-portrait.jpg)
+![me-output.jpg](assets/output.png)
 
 ## Code Explanation
 
