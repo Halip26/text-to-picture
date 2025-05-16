@@ -1,19 +1,53 @@
-# Project Description: Text Portrait
+# Text Portrait
 
-This project utilizes CSS and HTML to create a text portrait effect. The text content is transformed into a portrait image by setting the background to a portrait image and adjusting various CSS properties.
+Create stunning text portrait effects using only HTML and CSS. This project overlays text onto a portrait image, allowing the image to show through the text for a unique visual effect.
 
-## The result
+## Preview
 
-![me-output.jpg](assets/output.png)
+![Output Example](assets/output.png)
 
-## Code Explanation
+## How It Works
 
-The ```body``` selector sets the background color to black and hides overflowing content. It also specifies the font family as "Poppins".
+- The `body` uses a black background and the "Poppins" font.
+- The `#text` element:
+  - Aligns and spaces text for a portrait effect.
+  - Uses a background image (your portrait) clipped to the text.
+  - Makes the text itself transparent so the image shows through.
+  - Adjusts size, padding, and spacing for optimal appearance.
+- Responsive design: A media query adapts the effect for mobile screens.
 
-The ```text``` id selector styles the text content. It aligns the text vertically, sets the line height to 8 pixels, transforms the text to lowercase, and sets the font size to 12 pixels with a bolder weight. The background is set to a portrait image located in the "assets" folder. The text is aligned centrally within the background image, and the image is fixed in place without repeating. The ```-webkit-text-fill-color``` property is set to transparent to make the text invisible, while the ```-webkit-background-clip``` property is set to text to allow the background image to show through the text. The background size is set to 80vh (viewport height) to adjust the size of the portrait, and the background position is centered. The padding is set to 28% on both the left and right sides, and the letter and word spacing are adjusted to fine-tune the appearance.
+## Getting Started
 
-The ```@media``` query targets smaller screen sizes to adjust the styling for mobile devices. It removes the padding and adjusts the font size, line height, letter spacing, and word spacing to fit the smaller screen size.
+1. **Add your portrait image**  
+   Place your desired image in the `assets` folder (e.g., `assets/portrait.jpg`).
 
-## Sample Usage
+2. **Update the CSS**  
+   In your CSS, set the background image path for the `#text` selector:
 
-To use this code, you need to have an HTML file that includes the CSS code. Make sure to place your desired portrait image in the "assets" folder and update the path in the CSS code accordingly. Then, add an element with the id "text" to your HTML file, and the text portrait effect will be applied to that element.
+   ```css
+   #text {
+     background-image: url('assets/portrait.jpg');
+     /* ...other styles... */
+   }
+   ```
+
+3. **Add the HTML**  
+   Include an element with the `id="text"` in your HTML:
+
+   ```html
+   <div id="text">
+     Your text goes here...
+   </div>
+   ```
+
+4. **Open your HTML file in a browser**  
+   You should see your text portrait effect!
+
+## Customization
+
+- Change the text, font, or image for different effects.
+- Adjust CSS properties (font size, spacing, background size) to fine-tune the look.
+
+## License
+
+This project is open source and free to use.
