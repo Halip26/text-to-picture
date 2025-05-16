@@ -31,3 +31,28 @@ changeTextRandomly();
 
 // Atur interval untuk mengubah teks setiap 0,5 detik (500 milliseconds)
 setInterval(changeTextRandomly, 500);
+
+// Menentukan array pd background yg berisikan lokasi ketiga gambar
+const backgrounds = [
+  "url('assets/me-black.jpg')",
+  "url('assets/me-white.jpg')",
+  "url('assets/me-at-sunset.jpg')",
+];
+
+// Fungsi untuk mengubah latar secara acak
+function changeBackgroundRandomly() {
+  // Membuat indeks acak berdasarkan panjang larik latar belakang
+  const randomIndex = Math.floor(Math.random() * backgrounds.length);
+  // Mendapatkan URL latar belakang pada indeks acak
+  const randomBackground = backgrounds[randomIndex];
+  // Atur properti latar belakang elemen #text ke URL latar belakang acak
+  textElement.style.backgroundImage = randomBackground;
+  // Menambahkan transisi ketika bg url berganti
+  textElement.style.transition = "background 1s ease-in-out";
+}
+
+// Panggil fungsinya untuk mengatur url bg secara random
+changeBackgroundRandomly();
+
+// Atur interval untuk mengubah teks setiap 3 seconds (3000 milliseconds)
+setInterval(changeBackgroundRandomly, 3000);
